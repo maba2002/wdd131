@@ -3,69 +3,96 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WDD 131- Dynamic Web Fundamentals- Marvin Baliraine</title>
-    <meta name="description" content=" My name is Marvin Baliraine, l am doing wdd 131- Dynamic web Fundamentals- this semester. l live in Uganda Jinja with my family. l am currently working at Beselfless organisation as a tutor. l love touring, and programming so much.">
-    <meta name="author" content="">
+    <title>Temple Album</title>
+    <meta name="description" content="A WDD website showing temple pictures">
+    <meta name="author"  content="Marvin Baliraine">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/temple.css">
     <link rel="stylesheet" href="styles/temples-large.css">
+    <script src="scripts/temples.js" type="text/javascript" defer></script>
+
 </head>
 <body>
     <header>
-        <h1>Temple Album</h1>
-        <nav>
-            <a href="#">Home</a>
-            <a href="#">Old</a>
-            <a href="#">New</a>
-            <a href="#">large</a>
-            <a href="#">Small</a>
-        </nav>
+        <div class="navbar">
+            <div class="logo">
+                <h1 class="logo"> Temple Album</h1> </div>
+
+            <nav class="nav-links">
+                <ul id="nav-links">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Old</a></li>
+                    <li><a href="#">New</a></li>
+                    <li><a href="#">Large</a></li>
+                    <li><a href="#">Small</a></li>
+                </ul>
+            </nav>
+
+            <nav class="menu">
+                <ul >
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Old</a></li>
+                    <li><a href="#">New</a></li>
+                    <li><a href="#">Large</a></li>
+                    <li><a href="#">Small</a></li>
+                </ul>
+            </nav>
+            
+           
+            <div class="hamburger" id="hamburger">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+        </div>
     </header>
+    <main id="main-content">
+        <h2>Home</h2>
+        <div>
+            <figure>
+                <img src="images/nairobi1.jpg" alt="temple">
+                <figcaption>kenya Nairobi Temple</figcaption>
+            </figure>
+            <figure>
+                <img src="images/nairobi2.jpg" alt="temple">
+                <figcaption>kenya Nairobi Temple</figcaption>
+            </figure>
+            <figure>
+                <img src="images/nairobi3.jpg" alt="temple">
+                <figcaption>kenya Nairobi Temple</figcaption>
+            </figure>
+            <figure>
+                <img src="images/nairobi4.jpg" alt="temple">
+                <figcaption>kenya Nairobi Temple</figcaption>
+            </figure>
+            <figure>
+                <img src="images/nairobi5.jpg" alt="temple">
+                <figcaption>kenya Nairobi Temple</figcaption>
+            </figure>
+            <figure>
+                <img src="images/nairobi6.jpg" alt="temple">
+                <figcaption>kenya Nairobi Temple</figcaption>
+            </figure>
+            <figure>
+                <img src="images/nairobi7.jpg" alt="temple">
+                <figcaption>kenya Nairobi Temple</figcaption>
+            </figure>
+            <figure>
+                <img src="images/nairobi8.jpg" alt="temple">
+                <figcaption>kenya Nairobi Temple</figcaption>
+            </figure>
+            <figure>
+                <img src="images/nairobi9.jpg" alt="temple">
+                <figcaption>kenya Nairobi Temple</figcaption>
+            </figure>
+        </div>
+    </main>
 
-<main>
-    <h1> Kenya Nairobi Temple</h1>
-    <figure>
-        <img src="images/nairobi1.jpg" alt="Temple image">
-        <figcaption> Kenya Nairobi Temple </figcaption>
-    </figure>
-    <figure>
-        <img src="images/nairobi2.jpg" alt="Temple image">
-        <figcaption> Kenya Nairobi Temple </figcaption>
-    </figure>
-    <figure>
-        <img src="images/nairobi3.jpg" alt="Temple image">
-        <figcaption> Kenya Nairobi Temple </figcaption>
-    </figure>
-    <figure>
-        <img src="images/nairobi4.jpg" alt="Temple image">
-        <figcaption> Kenya Nairobi Temple </figcaption>
-    </figure>
-    <figure>
-        <img src="images/nairobi5.jpg" alt="Temple image">
-        <figcaption> Kenya Nairobi Temple </figcaption>
-    </figure>
-    <figure>
-        <img src="images/nairobi6.jpg" alt="Temple image">
-        <figcaption> Kenya Nairobi Temple </figcaption>
-    </figure>
-    <figure>
-        <img src="images/nairobi7.jpg" alt="Temple image">
-        <figcaption> Kenya Nairobi Temple </figcaption>
-    </figure>
-    <figure>
-        <img src="images/nairobi8.jpg" alt="Temple image">
-        <figcaption> Kenya Nairobi Temple </figcaption>
-    </figure>
-    <figure>
-        <img src="images/nairobi9.jpg" alt="Temple image">
-        <figcaption> Kenya Nairobi Temple </figcaption>
-    </figure>
-    
-</main>
-<footer>
-    <span id="marvin-baliraine-location">2025 Marvin Baliraine Jinja Uganda</span>
-
-    <p id="lastmodified"></p>
-</footer>
-<script src="./scripts/temple.js"></script>
+    <footer>
+        <p>&copy;2025 🌸 Marvin Baliraine 🌸 Jinja, Uganda</p>
+        <p id="lastModified"></p> 
+    </footer>
 </body>
 </html>

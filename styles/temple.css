@@ -1,6 +1,151 @@
-header{
-    display: flex;
+:root {
+   
+    --accent-color: #09077a;    /* Accent color */
+    --bg-color:rgb(2, 5, 2);;        /* Background color */
+    --text-color: white;      /* Text color */
+    --hover-color:rgb(4, 116, 97);
+       
+
+ }
+ 
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: rgb(6, 61, 6);
+    color:var(--text-color);
+    position: fixed;
+    top:0%;
+    width: 100%;
     
-    margin-top: 0%;
+    
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.logo {
+    font-size: 1.5em;
+}
+
+nav {
+    flex-grow: 1;
+    text-align: right;
+    
+}
+
+.menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    
+}
+
+.menu li {
+    display: inline;
+    margin-left: 2em;
+}
+
+.menu li a {
+    color: var(--text-color);
+    text-decoration: none;
+    padding: 2%;
+}
+
+.menu li a:hover{
+    background-color: rgb(4, 116, 97);
+    
+}
+
+.hamburger {
+    display: none;
+    cursor: pointer;
     flex-direction: column;
+}
+
+.hamburger .bar {
+    width: 25px;
+    height: 3px;
+    background-color: var(--text-color);
+    margin: 4px 0;
+}
+
+menu {
+    padding: 2em;
+    text-align: center;
+    transition: margin-top 0.3s ease;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.gallery-item {
+    margin: 10px;
+}
+
+.gallery-item img {
+    max-width: 100%;
+    height: auto;
+}
+
+footer {
+    background-color:rgb(5, 32, 5);
+    color: var(--text-color);
+    text-align: center;
+    padding: 0;
+    bottom: 0%;
+    position: fixed;
+    width: 100%;
+    font-size: smaller;
+    font-weight: bold
+   
+}
+
+#nav-links{
+    display: none;
+}
+
+
+main{
+    padding-top: 7%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.1fr auto;
+    width: 100%;
+    padding-bottom: 10%;
+    
+}
+main h2{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+   
+
+    
+}
+main div{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+
+}
+main div figure img {
+    width:300px;
+    height: 300px;
+    gap: 10px;
 }

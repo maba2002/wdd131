@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temple Album</title>
+    <meta name="description" content="A WDD website showing temple pictures">
+    <meta name="author" content="Marvin Baliraine">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/filtered-temples.css">
+    <link rel="stylesheet" href="styles/filtered-temples-small.css">
+    <script src="scripts/filtered-temples.js"defer></script>
+    
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <div class="logo">
+                <h1>Temple Album</h1>
+            </div>
+            <nav>
+                <ul id="nav-links">
+                    <li><a href="#" data-filter="home">Home</a></li>
+                    <li><a href="#" data-filter="old">Old</a></li>
+                    <li><a href="#" data-filter="new">New</a></li>
+                    <li><a href="#" data-filter="large">Large</a></li>
+                    <li><a href="#" data-filter="small">Small</a></li>
+                </ul>
+            </nav>
+            <div class="hamburger" id="hamburger">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+        </div>
+    </header>
+
+    <main id="main-content">
+        <h2>Home</h2>
+        <div id="res-grid" class="res-grid"></div>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 🌸 Marvin Baliraine 🌸 Jinja, Uganda</p>
+        <p id="lastModified"></p> 
+    </footer>
+</body>
+</html>
