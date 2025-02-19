@@ -46,12 +46,6 @@
     width: 100%;
     right: 0%;
     transition: all 0.3s ease;
-    
-    
-    
-  
-
-    
 
 }
 
@@ -62,13 +56,11 @@
     
     padding: 10%;
     color: var(--text-color);
-    
 
 }
 
 #nav-links li a:hover{
-    background-color: rgb(4, 116, 97);
-
+    background-color: rgb(4, 116, 97)
 
 }
 #nav-links li {
