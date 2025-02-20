@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temple Album</title>
+    <meta name="description" content="A WDD website showing temple pictures">
+    <meta name="author"  content="Marvin Baliraine">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/project.css">
+    <script src="scripts/project.js" type="text/javascript" defer></script>
+
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <img class="logo-img" src="pictures\hermonie-icon.jpg" alt="hermonie-icon" loading="lazy">
+           <!-- <img src="pictures/beselfless-icon.svg" alt="beselfless-icon">-->
+            <div class="logo">
+                 
+                <h1 class="logo"> Harmonie investiments</h1> </div>
+
+            <nav class="nav-links">
+                <ul id="nav-links">
+                    <li><a href="project.html">Home</a></li>
+                    <li><a href="projectform.html">Register</a></li>
+                    <li><a href="about.html"> About us</a></li>
+                  <!--- <li><a href="#">Large</a></li> -->
+                  <!---  <li><a href="#">Small</a></li> -->
+                </ul>
+            </nav>
+
+            <nav class="menu">
+                <ul >
+                    <li><a href="project.html">Home</a></li>
+                    <li><a href="projectform.html">Register</a></li>
+                    <li><a href="about.html">About-us</a></li>
+                   <!--- <li><a href="#">Large</a></li> -->
+                  <!---  <li><a href="#">Small</a></li> -->
+                </ul>
+            </nav>
+            
+           
+            <div class="hamburger" id="hamburger">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div  class="bar"></div>
+            </div>
+        </div>
+    </header>
+    <main id="main-content">
+        
+       
+        <picture class="bk-img">
+            <source media="(max-width: 500px)" srcset="pictures\hermonie_students_small.webp" >
+            <source media="(min-width: 501px) and (max-width: 1000px)" srcset="pictures\hermonie_students_small.webp">
+            <source media="(min-width: 1001px)" srcset="pictures\hermonie_students_small.webp">
+            <img src="pictures/hermonie.webp" alt="Savanna" loading="lazy">
+        </picture>
+            <div class="container">
+                <p class="word">Nurturing</p>
+                <p class="word">Resilient</p>
+                <p class="word">Minds</p>
+            </div>
+            
+            
+    </main>
+
+    <footer>
+        <p>&copy;2025 🌸 hermonie.org 🌸 Jinja Uganda</p>
+        <p id="lastModified"></p> 
+    </footer>
+</body>
+</html>

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temple Album</title>
+    <meta name="description" content="A WDD website showing temple pictures">
+    <meta name="author"  content="Marvin Baliraine">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/project.css">
+    <link rel="stylesheet" href="styles/projectform.css">
+    
+    <script src="scripts/projectform.js" type="text/javascript" defer></script>
+
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <img class="logo-img" src="pictures\hermonie-icon.jpg" alt="hermonie" loading="lazy">
+           <!-- <img src="pictures/beselfless-icon.svg" alt="beselfless-icon">-->
+            <div class="logo">
+                 
+                <h1 class="logo"> Hermonie investiments</h1> </div>
+
+            <nav class="nav-links">
+                <ul id="nav-links">
+                    <li><a href="project.html">Home</a></li>
+                    <li><a href="projectform.html">Register</a></li>
+                    <li><a href="about.html">About us</a></li>
+                  <!--- <li><a href="#">Large</a></li> -->
+                  <!---  <li><a href="#">Small</a></li> -->
+                </ul>
+            </nav>
+
+            <nav class="menu">
+                <ul >
+                    <li><a href="project.html">Home</a></li>
+                    <li><a href="projectform.html">Register</a></li>
+                    <li><a href="about.html">About us</a></li>
+                   <!--- <li><a href="#">Large</a></li> -->
+                  <!---  <li><a href="#">Small</a></li> -->
+                </ul>
+            </nav>
+            
+           
+            <div class="hamburger" id="hamburger">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div  class="bar"></div>
+            </div>
+        </div>
+    </header>
+    <main id="main-content">
+    <h2>Program application form</h2>
+    <form id="applicationform" method="get" action="projectreviewform.html">
+        <label for="CollegeName">Select your school</label>
+        <select id="CollegeName" name="CollegeName" required>
+            <option value="" disabled selected>Select your school ...</option>
+        </select>
+
+     <!----  <label>Overall Rating</label>
+        <div class="rating">
+            <input type="radio" id="star1" name="rating" value="1" required>
+            <label for="star1">☆</label>
+            <input type="radio" id="star2" name="rating" value="2">
+            <label for="star2">☆</label>
+            <input type="radio" id="star3" name="rating" value="3">
+            <label for="star3">☆</label>
+            <input type="radio" id="star4" name="rating" value="4">
+            <label for="star4">☆</label>
+            <input type="radio" id="star5" name="rating" value="5">
+            <label for="star5">☆</label>
+        </div>-->
+
+        <label for="Birthdate"> Enter your date of birth</label>
+        <input type="date" id="installationDate" name="installationDate" required>
+
+        <label>Which year of school have you completed? (Check all that apply)</label>
+        <div class="features">
+            <div class="feature-item">
+                <input type="checkbox" id="junior" name="features" value="Junior">
+                <label for="junior">Junior</label>
+            </div>
+            <div class="feature-item">
+                <input type="checkbox" id="Sophomore" name="features" value="Sophomore">
+                <label for="sophomore">Sophomore</label>
+            </div>
+            <div class="feature-item">
+                <input type="checkbox" id="Senior" name="features" value="senior">
+                <label for="Senior">Senior</label>
+            </div>
+            <div class="feature-item">
+                <input type="checkbox" id="none" name="features" value="none">
+                <label for="none">None</label>
+            </div>
+        </div>
+
+        <label for="writtenReview">Essay: Tell us about yourself. Be convincing! (Optional)</label>
+        <textarea id="writtenReview" name="writtenReview"></textarea>
+
+        <label for="userName">Your Names</label>
+        <input type="text" id="userName" name="userName">
+
+        <input type="submit" value=" Submit">
+    </form>
+    <footer>
+       <p>©2025 🌸 Hermonie.org 🌸 Jinja Uganda</p>  
+       <p id="lastModified"></p>
+    </footer>
+
+    <!--<footer>
+        <p>&copy;2025 🌸 Marvin Baliraine 🌸 Uganda</p>
+        <p id="lastModified"></p> 
+    </footer>-->
+    </main>
+    
+</body>
+</html>
